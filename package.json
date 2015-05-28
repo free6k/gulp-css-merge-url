@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-merge-url",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin for merging css selectors that contain the same URL",
   "license": "MIT",
   "repository": "free6k/gulp-css-merge-url",
