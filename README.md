@@ -6,7 +6,7 @@
 ## Install
 
 ```
-Not yet in NPM :(
+$ npm install --save-dev gulp-css-merge-url
 ```
 
 
