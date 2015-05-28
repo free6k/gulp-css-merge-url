@@ -1,6 +1,6 @@
-# gulp-css-merge-url [BETA]
+# gulp-css-merge-url
 
-> Plugin for merge all css selectors witch elements contains similar url
+> Plugin for merging css selectors that contain the same URL
 
 
 ## Install

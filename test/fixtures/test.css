@@ -1,0 +1,33 @@
+.first-property {
+	background: red url(1.png) no-repeat;
+	background-position: 0 0;
+}
+
+.second-property {
+	background-image: url(1.png);
+	background-position: 0 100%;
+}
+
+.third-property {
+	background-image: url(2.png);
+	background-size: cover;
+}
+
+@media all {
+	.first-property {
+		background: red url(11.png) no-repeat;
+		background-position: 0 0;
+	}
+
+	.second-property {
+		background-image: url(11.png);
+		background-position: 0 100%;
+	}
+}
+
+@media print {
+	.third-property {
+		background-image: url(22.png);
+		background-size: cover;
+	}
+}

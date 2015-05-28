@@ -1,0 +1,51 @@
+.first-property {
+	background: red no-repeat;
+	background-position: 0 0;
+}
+
+.second-property {
+	background-position: 0 100%;
+}
+
+.third-property {
+	background-size: cover;
+}
+
+@media all {
+	.first-property {
+		background: red no-repeat;
+		background-position: 0 0;
+	}
+
+	.second-property {
+		background-position: 0 100%;
+	}
+}
+
+@media print {
+	.third-property {
+		background-size: cover;
+	}
+}
+
+.first-property,
+.second-property {
+	background-image: url(1.png);
+}
+
+.third-property {
+	background-image: url(2.png);
+}
+
+@media all {
+	.first-property,
+	.second-property {
+		background-image: url(11.png);
+	}
+}
+
+@media print {
+	.third-property {
+		background-image: url(22.png);
+	}
+}
