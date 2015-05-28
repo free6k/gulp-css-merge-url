@@ -5,6 +5,8 @@ var through = require('through2');
 var binaryString = require('binary-string');
 var cssparse = require('css');
 var crypto = require('crypto');
+var gutil = require('gulp-util');
+var PluginError = gutil.PluginError;
 
 function clearSource(string) {
     return string.replace(/([\s|"|'])/i, '');
@@ -159,13 +161,17 @@ function insertCSSObject(cmu, css) {
 
 }
 
-function gulpCMU() {
+function gulpCMU(file) {
+
+	if (!file) {
+		throw new PluginError('gulp-css-merge-url', 'Missing file option for gulp-css-merge-url');
+	}
+
+	if (typeof file !== 'string' && typeof file.path !== 'string') {
+		throw new PluginError('gulp-css-merge-url', 'Missing path in file options for gulp-css-merge-url');
+	}
 
     return through.obj(function (file, enc, cb) {
-
-        if (!file) {
-            throw new PluginError('gulp-css-merge-url', 'Missing file option gulp-css-merge-url');
-        }
 
         if (file.isNull()) {
             cb();
