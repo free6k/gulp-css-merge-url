@@ -161,15 +161,7 @@ function insertCSSObject(cmu, css) {
 
 }
 
-function gulpCMU(file) {
-
-	if (!file) {
-		throw new PluginError('gulp-css-merge-url', 'Missing file option for gulp-css-merge-url');
-	}
-
-	if (typeof file !== 'string' && typeof file.path !== 'string') {
-		throw new PluginError('gulp-css-merge-url', 'Missing path in file options for gulp-css-merge-url');
-	}
+function gulpCMU() {
 
     return through.obj(function (file, enc, cb) {
 
