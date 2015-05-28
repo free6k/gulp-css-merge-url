@@ -1,7 +1,7 @@
 {
   "name": "gulp-css-merge-url",
-  "version": "1.0.0",
-  "description": "Plugin for merge all css selectors with similar url",
+  "version": "1.0.1",
+  "description": "Plugin for merge all css selectors witch elements contains similar url",
   "license": "MIT",
   "repository": "free6k/gulp-css-merge-url",
   "author": {
@@ -19,7 +19,7 @@
     "index.js"
   ],
   "keywords": [
-    "gulpplugin css merge url source selectors"
+    "gulpplugin css merge url source selectors similar"
   ],
   "dependencies": {
     "binary-string": "^1.0.0",
@@ -27,6 +27,13 @@
     "css": "^2.2.0",
     "gulp-util": "^3.0.4",
     "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "mocha": "^2.0.1",
+    "mocha-lcov-reporter": "0.0.1",
+    "should": "^5.0.0",
+    "stream-assert": "^2.0.1"
   },
   "devDependencies": {
     "mocha": "*"
