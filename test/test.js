@@ -3,7 +3,6 @@ var assert = require('stream-assert');
 var should = require('should');
 var path = require('path');
 var fs = require('fs');
-var File = require('gulp-util').File;
 var gulp = require('gulp');
 var cmu = require('./../index');
 require('mocha');
