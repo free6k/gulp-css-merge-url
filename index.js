@@ -18,8 +18,8 @@ function md5(string) {
 
 function parseCMU(rule) {
     var cmu = {};
-    var source_pattern = /(url\(.*?\))[\s|;]/i;
-    var source_pattern_g = /(url\(.*?\))[\s|;]/ig;
+    var source_pattern = /(url\(.*?\))/i;
+    var source_pattern_g = /(url\(.*?\))/ig;
 
     var sel = rule.selectors;
     var decl = rule.declarations;
