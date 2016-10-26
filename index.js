@@ -1,8 +1,6 @@
 'use strict';
 
-var path = require('path');
 var through = require('through2');
-var binaryString = require('binary-string');
 var cssparse = require('css');
 var crypto = require('crypto');
 var gutil = require('gulp-util');
@@ -180,7 +178,7 @@ function gulpCMU() {
         var CSSObjects = {};
 
         if (file.isBuffer()) {
-            css = binaryString.fromBuffer(file.contents);
+            css = file.contents.toString();
             css = cssparse.parse(css);
         }
 
